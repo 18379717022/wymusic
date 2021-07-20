@@ -1,0 +1,6 @@
+/* pages/other/other.wxss */
+@import '/template/myTemplate/myTemplate.wxss';
+.othertitle{
+  font-size: 50rpx;
+  color: aqua;
+}

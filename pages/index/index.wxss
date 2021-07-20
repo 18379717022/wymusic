@@ -1,0 +1,118 @@
+/* pages/index/index.wxss */
+.banners1{
+  width: 100%;
+  height: 350rpx;
+}
+.banners1 image{
+  width: 100%;
+  height: 100%;
+}
+.navcontainer{
+  display: flex;
+  margin-top: 20rpx;
+  
+}
+.navitem{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+}
+.iconfont{
+  background:red;
+  color: white;
+  border-radius: 50%;
+  width: 80rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+}
+.texttitle{
+  font-size: 30rpx;
+  margin-top: 16rpx;
+}
+.recommend{
+  margin-top: 16rpx;
+  padding:16rpx;
+}
+.title{
+  font-size:30rpx;
+  color: gray;
+}
+.more{
+  float: right;
+  border:2rpx solid black;
+  border-radius: 30rpx;
+  padding: 10rpx 30rpx;
+  font-size: 26rpx;
+}
+.head view,text{
+  margin-top: 15rpx;
+ 
+}
+.recommenditem{
+  line-height: 80rpx;
+  font-size: 30rpx;
+}
+.head{
+  height: 150rpx;
+}
+.scollitem image{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 14rpx;
+}
+.scollitem{
+  display: flex;
+  flex-direction: column;
+  margin-right: 20rpx;
+}
+.scollitem text{
+  font-size: 28rpx;
+  /* 多行文本换行*/
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  /* 单行文本换行
+  display:block;
+  white-space:nowrap;
+  over-flow:hidden;
+  text-overflow: ellipsis;
+  */
+}
+.scollcontainer{
+  margin-top: 20rpx;
+  display: flex;
+  height:250rpx;
+  margin-left: 15rpx;
+}
+.todolist{
+  height: 450rpx;
+  margin-left: 15rpx;
+  width: 94%;
+}
+.todolist swiper{
+  height: 450rpx;
+}
+.imitem image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.todolist text{
+  font-size: 30rpx;
+}
+.imitem{
+  height: 100rpx;
+  display: flex;
+  line-height: 100rpx;
+  margin-bottom: 12rpx;
+}
+.imitem text{
+  line-height: 76rpx;
+  margin-left: 20rpx;
+}
+.tree{
+  margin-top: 25rpx;
+}

@@ -1,0 +1,27 @@
+/* components/NavHeader/NavHeader.wxss */
+.recommend{
+  margin-top: 10rpx;
+  padding:16rpx;
+}
+.title{
+  font-size:30rpx;
+  color: gray;
+}
+.more{
+  float: right;
+  border:2rpx solid black;
+  border-radius: 30rpx;
+  padding: 10rpx 30rpx;
+  font-size: 26rpx;
+}
+.head view,text{
+  margin-top: 15rpx;
+ 
+}
+.recommenditem{
+  line-height: 80rpx;
+  font-size: 30rpx;
+}
+.head{
+  height: 150rpx;
+}

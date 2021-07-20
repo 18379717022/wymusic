@@ -1,0 +1,130 @@
+/* pages/songDetail/songDetail.wxss */
+.songDetailContainer{
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*摇杆*/
+.needle{
+  position: relative;
+  z-index: 99;
+  top: -40rpx;
+  left: 60rpx;
+  width: 192rpx;
+  height: 274rpx;
+  transform-origin: 40rpx 0;/*旋转中心点*/
+  transition: transform 1s;
+  
+}
+.needleRotate{
+  transform: rotate(-20deg);/*旋转角度*/
+}
+/*磁盘*/
+.discContainer{
+  position: relative;
+  top: -170rpx;
+  width:598rpx;
+  height: 598rpx;
+}
+.discAnimation{
+  animation: disc 4s linear infinite;
+  animation-delay: 1s;
+}
+/*
+  @keyframes:设置动画帧
+    1)from to
+     -适用于简单的动画,只有两帧
+    2)百分比
+     -适用于复杂的动画,不止两帧
+*/
+@keyframes disc{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+.circle{
+  z-index: 100;
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  background: #fff;
+  margin:10rpx 0;
+}
+.disc{
+  width:598rpx;
+  height: 598rpx;
+}
+.musicImg{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 370rpx;
+  height: 370rpx;
+  border-radius: 50%;
+}
+/*底部控制区域*/
+.musicControl{
+  position: absolute;
+  bottom: 40rpx;
+  left: 0;
+  border-top: 1rpx solid #fff;
+  width: 100%;
+  display: flex;
+
+}
+.musicControl text{
+ width: 20%;
+ height: 120rpx;
+ line-height: 120rpx;
+ color: #fff;
+ text-align: center;
+ font-size: 45rpx;
+}
+.musicControl text.big{
+  font-size: 70rpx;
+}
+/*进度条区域*/
+.progressControl{
+  position: absolute;
+  bottom: 200rpx;
+  width: 640rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  display: flex;
+
+}
+.barControl{
+  position: relative;
+  width: 450rpx;
+  height: 4rpx;
+  background: rgba(0,0,0,0.4);
+  margin: auto;
+  margin-right: 20rpx;
+  margin-left: 20rpx;
+}
+.audio-currentTime-Bar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4rpx;
+  background: red;
+  z-index: 1;
+}
+.audio-circle{
+  position: absolute;
+  top: -4rpx;
+  right: -12rpx;
+  width:12rpx;
+  height: 12rpx;
+  border-radius: 50%;
+  background: #fff;
+
+}
